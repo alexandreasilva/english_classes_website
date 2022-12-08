@@ -1,0 +1,181 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lemon&family=Montserrat:wght@400;500;600;700;900&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+}
+
+header .logo img {
+    max-width: 500px;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.navigation li {
+    list-style: none;
+    margin: 0 10px;
+    transform: rotate(-20deg);
+}
+
+.navigation li a {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    letter-spacing: 4px;
+    font-size: 5vw;
+    font-family: 'Gloria Hallelujah', cursive;
+    top: 80px;
+    left: 1200px;
+}
+
+.navigation li:hover a {
+    color: #de0611
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+}
+
+.banner .content p {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #fff;
+    text-shadow: rgb(0, 0, 0) 4px 6px 4px;
+}
+
+.banner .content .buttons {
+    position: relative;
+}
+
+.banner .content .buttons a {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: #de0611;
+    color: #fff;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.banner .content .buttons a:nth-child(2) {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 2555, 0.1);
+}
+
+.banner .content .buttons a:hover:nth-child(2) {
+    background: #de0611;
+}
+
+.whatsapp {
+    position: absolute;
+    bottom: 50px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.whatsapp img {
+    margin-right: 10px;
+    max-width: 50px;
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    .banner {
+        padding: 100px 50px;
+    }
+
+    .banner .play {
+        left: 50px;
+        font-size: 1em;
+    }
+
+    .whatsapp img {
+        margin-right: 10px;
+        max-width: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    .search {
+        position: relative;
+        width: calc(100% - 20px);
+        height: 40px;
+    }
+
+    .banner {
+        padding: 200px 20px 100px;
+    }
+
+    .banner .play {
+        left: 20px;
+        font-size: 1em;
+        bottom: 30px;
+    }
+}
